@@ -1,0 +1,557 @@
+@charset "UTF-8";
+#prices > ul, .controls, #bot #bot__body, nav ul, .logo, header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+* {
+  position: relative;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Proxima Nova", sans-serif;
+  color: inherit;
+  scrollbar-width: none;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-family: "Proxima Nova", sans-serif;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Gilroy", sans-serif;
+}
+
+section {
+  width: 100%;
+  padding: 5rem 70px;
+}
+
+#hero {
+  padding: 0;
+  min-height: 100vh;
+  background-image: url("./img/bg.jfif");
+  background-blend-mode: overlay;
+  background-position: -80px -48vh;
+  background-size: auto 200vh;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.075);
+}
+#hero::after {
+  content: "*Турция";
+  position: absolute;
+  right: 70px;
+  bottom: 10.4375rem;
+  color: white;
+}
+
+.blured {
+  backdrop-filter: blur(5px);
+}
+.blured * {
+  z-index: 2;
+}
+.blured::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("./img/noize.png");
+  background-size: 500px 150px;
+}
+
+.gold {
+  color: #f2c94c;
+}
+
+header {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.25rem 70px;
+  color: white;
+}
+header input,
+header label {
+  display: none;
+}
+
+.logo {
+  flex-wrap: nowrap;
+}
+.logo svg {
+  margin-right: 0.625rem;
+}
+.logo h2 {
+  font-size: 1.625rem;
+  margin-right: 1.875rem;
+}
+.logo span {
+  padding-left: 1.875rem;
+  border-left: 1px rgba(255, 255, 255, 0.2) solid;
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+nav {
+  display: block;
+}
+nav ul {
+  list-style: none;
+}
+nav ul li:last-of-type {
+  margin-right: -0.9375rem;
+}
+nav ul a {
+  padding: 0.3125rem 0.9375rem;
+  font-size: 0.9375rem;
+  transition: 0.25s;
+}
+
+h1 {
+  color: white;
+  font-size: 5.625rem;
+  width: 32rem;
+  line-height: 100%;
+  overflow: hidden;
+}
+
+#hero__content {
+  top: 8.75rem;
+  clear: both;
+  text-align: center;
+  color: white;
+}
+#hero__content * {
+  margin: 0 auto;
+}
+#hero__content p {
+  margin-top: 2.5rem;
+  font-size: 1.625rem;
+  line-height: 140%;
+  width: 100%;
+  max-width: 32.0625rem;
+  letter-spacing: -0.5px;
+  margin-bottom: 2.8125rem;
+  font-weight: 500;
+}
+#hero__content p ins {
+  font-family: "Playfair Display", serif;
+}
+#hero__content .instagram {
+  top: 4px;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+  padding: 0.19rem 0.3rem 0.14rem 0.26rem;
+  border-radius: 0.5rem;
+}
+#hero__content a {
+  background-color: #fff;
+  color: #000;
+  display: block;
+  width: 21.0625rem;
+  padding: 1.5rem 3.25rem;
+  font: 0.9375rem "Gilroy", sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+#bot {
+  position: absolute;
+  width: calc(100% - 70px);
+  bottom: 0;
+  right: 0;
+  color: white;
+}
+#bot h4 {
+  font-size: 1.125rem;
+  line-height: 100%;
+  letter-spacing: 0.25rem;
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+  font-weight: 500;
+}
+#bot #bot__body {
+  min-height: 8.75rem;
+  padding: 1.25rem 140px 1.25rem 50px;
+  list-style: none;
+  color: rgba(255, 255, 255, 0.8);
+}
+#bot #bot__body li {
+  padding: 1.5625rem 3.125rem;
+  display: flex;
+  align-items: center;
+  width: 33.3%;
+  font-family: "Proxima Nova";
+  font-size: 1.125rem;
+  line-height: 140%;
+}
+#bot #bot__body li:not(:last-child) {
+  border-right: 1px rgba(255, 255, 255, 0.2) solid;
+}
+#bot #bot__body li svg {
+  margin-right: 1.875rem;
+}
+
+#gallery {
+  overflow-x: unset;
+}
+#gallery input {
+  display: none;
+}
+#gallery * {
+  overflow-x: unset;
+}
+
+.btn {
+  margin: 0;
+  border: none;
+  padding: 1.25rem 4.625rem;
+  background: linear-gradient(128.38deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.1) 100%), #f2c94c;
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 1.125rem;
+  z-index: 1;
+  letter-spacing: 1px;
+  font-size: 0.9375rem;
+  transition: 0.25s;
+}
+.btn::before {
+  content: "";
+  position: absolute;
+  top: 0.625rem;
+  left: 8.5%;
+  width: 83%;
+  height: 83%;
+  background: linear-gradient(128.14deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.1) 100%), #f2c94c;
+  opacity: 0.4;
+  filter: blur(1rem);
+  z-index: -1;
+  transition: 0.25s;
+}
+.btn:hover::before {
+  transform: scale(1.2);
+}
+
+.slider {
+  transform: rotate(270deg) translateX(-100%);
+  transform-origin: top left;
+  overflow-y: scroll;
+  height: 100vw;
+  width: 620px;
+  padding-bottom: 70px;
+}
+
+.slide {
+  transition: 0.5s;
+  display: none;
+  grid-template-columns: repeat(4, 450px);
+  grid-template-rows: repeat(3, 200px);
+  gap: 20px;
+  transform: rotate(90deg);
+}
+.slide .pic {
+  width: 100%;
+  height: 100%;
+}
+.slide .pic .modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 500;
+  transition: 0.5s;
+  transform: scale(0);
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.slide .pic .modal img {
+  object-fit: contain;
+}
+.slide .pic .modal::before {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  content: "";
+  color: white;
+  font-family: "FontAwesome";
+  font-size: 2rem;
+  z-index: 500;
+}
+.slide .pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.slide .pic.x1y2 {
+  grid-column: 3/4;
+  grid-row: 1/3;
+}
+.slide .pic.x2y2 {
+  grid-column: 1/3;
+  grid-row: 2/4;
+}
+
+#family:checked ~ .slider > .family,
+#lovestory:checked ~ .slider > .lovestory,
+#lifestyle:checked ~ .slider > .lifestyle,
+#fashion:checked ~ .slider > .fashion,
+#glamour:checked ~ .slider > .glamour {
+  display: grid;
+}
+
+#family:checked ~ .controls > label[for=family],
+#lovestory:checked ~ .controls > label[for=lovestory],
+#lifestyle:checked ~ .controls > label[for=lifestyle],
+#fashion:checked ~ .controls > label[for=fashion],
+#glamour:checked ~ .controls > label[for=glamour] {
+  background: linear-gradient(128.38deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.1) 100%), #f2c94c;
+  border-color: white;
+}
+#family:checked ~ .controls > label[for=family]::before,
+#lovestory:checked ~ .controls > label[for=lovestory]::before,
+#lifestyle:checked ~ .controls > label[for=lifestyle]::before,
+#fashion:checked ~ .controls > label[for=fashion]::before,
+#glamour:checked ~ .controls > label[for=glamour]::before {
+  transform: scale(1);
+}
+
+.section__title {
+  text-align: center;
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  letter-spacing: 0.625rem;
+  margin-bottom: 1.0625rem;
+}
+
+.section__subtitle {
+  text-align: center;
+  font-size: 2.625rem;
+  margin-bottom: 3.125rem;
+}
+
+.controls {
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 3.125rem;
+}
+.controls .btn {
+  padding: 1.25rem 1.875rem;
+  margin: 0.625rem;
+  background: white;
+  border: 2px #e9e9e9 solid;
+}
+.controls .btn::before {
+  transform: scale(0);
+}
+
+#gallery__content {
+  height: 776px;
+}
+
+#prices {
+  background-color: #202020;
+  color: white;
+  padding: 5rem calc(4.375rem - 10px);
+}
+#prices > ul {
+  list-style: none;
+}
+
+.card {
+  padding: 10px;
+  width: 30%;
+  padding: 1.25rem 0;
+  text-align: center;
+  border: 1px rgba(255, 255, 255, 0.1) solid;
+  margin: 10px;
+}
+.card span {
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.2);
+  font-size: 0.9375rem;
+  font-weight: 800;
+}
+.card h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.125rem;
+  margin-bottom: 1.25rem;
+}
+.card ul {
+  display: block;
+  width: 100%;
+  padding: 2.5rem 2.5rem;
+  border-top: 1px rgba(255, 255, 255, 0.1) solid;
+  border-bottom: 1px rgba(255, 255, 255, 0.1) solid;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+.card ul li {
+  text-align: start;
+  padding-left: 1.5rem;
+  font-size: 1.125rem;
+  margin: 10px;
+  line-height: 140%;
+  vertical-align: start;
+  color: rgba(255, 255, 255, 0.8);
+}
+.card ul li::before {
+  content: "";
+  background-image: url("./img/check.svg");
+  height: 1rem;
+  width: 1rem;
+  background-position: center;
+  position: absolute;
+  top: 0.35rem;
+  left: 0;
+  background-repeat: no-repeat;
+}
+.card ul li.disabled {
+  color: rgba(255, 255, 255, 0.2);
+}
+.card ul li.disabled::before {
+  filter: brightness(10);
+  opacity: 0.2;
+}
+.card .price {
+  font-weight: black;
+  color: white;
+  font-size: 2.25rem;
+  display: block;
+  line-height: 100%;
+  margin: 1.875rem 0 1.4375rem;
+}
+
+#prime {
+  border-color: white;
+}
+
+@media (max-height: 40rem), (max-width: 85rem) {
+  #bot {
+    display: none;
+  }
+
+  #hero::after {
+    bottom: 2rem;
+  }
+
+  #hero__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+@media (max-width: 72rem) {
+  #prices {
+    justify-content: center;
+  }
+
+  .card {
+    width: 100%;
+  }
+}
+@media (max-width: 42rem) {
+  #prices,
+#gallery {
+    padding: 5rem calc(1.375rem - 10px);
+  }
+
+  #hero h1 {
+    font-size: 12vw;
+    width: unset;
+  }
+  #hero p {
+    font-size: 4.5vw;
+  }
+  #hero a {
+    font-size: 3.5vw;
+    padding: 3vw 5vw;
+    width: unset;
+  }
+
+  .controls {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #gallery__content {
+    height: calc(776px + 18rem) !important;
+  }
+}
+@media (max-width: 57.5rem) {
+  header {
+    padding: 20px 10px;
+  }
+  header nav ul li:last-of-type {
+    padding: 0.5rem;
+    margin-right: 0;
+  }
+  header label {
+    display: block;
+    z-index: 999;
+    position: fixed;
+    top: 1.6rem;
+    right: 1rem;
+    font-family: "FontAwesome";
+  }
+  header label::after {
+    content: "";
+  }
+  header #menu-checkbox:checked + label::after {
+    content: "";
+  }
+  header #menu-checkbox:checked + label + #links {
+    transform: scaleY(0);
+  }
+  header #links {
+    transition: 0.25s;
+    transform-origin: top;
+    position: fixed;
+    top: 4.5rem;
+    left: 0;
+    width: 100%;
+    height: unset;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.493);
+    flex-direction: column;
+  }
+  header #links li {
+    padding: 1rem;
+  }
+}
+@media (max-width: 67.625rem) {
+  #gallery__content {
+    height: calc(776px + 3rem);
+  }
+}
+@media (max-width: 29rem) {
+  .logo span {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

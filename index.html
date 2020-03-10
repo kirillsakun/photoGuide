@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PhotoGuide</title>
+  <link rel="stylesheet" type="text/css" href="./proxima_nova.css" />
+  <link rel="stylesheet"
+    href="https://cdn.rawgit.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./main.css" />
+</head>
+
+<body>
+  <header class="blured">
+    <div class="logo">
+      <svg width="40" height="27" viewBox="0 0 40 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M1 0H0V1V9.47089H2V2H9.47089V0H1ZM39.7932 1V0H38.7932H30.3223L30.3223 2L37.7932 2V9.47089H39.7932V1ZM0 26.1095H1H9.47089V24.1095H2V16.6386H0V25.1095V26.1095ZM39.7932 25.1095V26.1095H38.7932H30.3223L30.3223 24.1095H37.7932V16.6386L39.7932 16.6386V25.1095Z"
+          fill="#F2C94C" />
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M1 0H0V1V9.47089H2V2H9.47089V0H1ZM39.7932 1V0H38.7932H30.3223L30.3223 2L37.7932 2V9.47089H39.7932V1ZM0 26.1095H1H9.47089V24.1095H2V16.6386H0V25.1095V26.1095ZM39.7932 25.1095V26.1095H38.7932H30.3223L30.3223 24.1095H37.7932V16.6386L39.7932 16.6386V25.1095Z"
+          fill="url(#paint0_linear)" />
+        <path
+          d="M19.7081 4.90961C21.4662 4.90961 23.0964 5.4608 24.4373 6.4008L23.1658 7.6802C22.1635 7.04817 20.9782 6.68277 19.7081 6.68277C18.3053 6.68277 17.0059 7.12855 15.9423 7.88701L14.6821 6.61894C16.0759 5.54663 17.8181 4.90961 19.7081 4.90961Z"
+          fill="#F2C94C" />
+        <path
+          d="M19.7081 4.90961C21.4662 4.90961 23.0964 5.4608 24.4373 6.4008L23.1658 7.6802C22.1635 7.04817 20.9782 6.68277 19.7081 6.68277C18.3053 6.68277 17.0059 7.12855 15.9423 7.88701L14.6821 6.61894C16.0759 5.54663 17.8181 4.90961 19.7081 4.90961Z"
+          fill="url(#paint1_linear)" />
+        <path
+          d="M13.1245 8.18621C12.0588 9.58869 11.4257 11.3417 11.4257 13.2435C11.4257 15.0125 11.9735 16.6528 12.9077 18.002L14.1792 16.7226C13.5511 15.7141 13.1879 14.5215 13.1879 13.2435C13.1879 11.8319 13.631 10.5245 14.3847 9.45428L13.1245 8.18621Z"
+          fill="#F2C94C" />
+        <path
+          d="M13.1245 8.18621C12.0588 9.58869 11.4257 11.3417 11.4257 13.2435C11.4257 15.0125 11.9735 16.6528 12.9077 18.002L14.1792 16.7226C13.5511 15.7141 13.1879 14.5215 13.1879 13.2435C13.1879 11.8319 13.631 10.5245 14.3847 9.45428L13.1245 8.18621Z"
+          fill="url(#paint2_linear)" />
+        <path
+          d="M23.4739 18.6C22.4103 19.3584 21.111 19.8042 19.7081 19.8042C18.1736 19.8042 16.7628 19.2708 15.6491 18.3782L14.3967 19.6383C15.8346 20.8488 17.6868 21.5774 19.7081 21.5774C21.5982 21.5774 23.3404 20.9403 24.7342 19.868L23.4739 18.6Z"
+          fill="#F2C94C" />
+        <path
+          d="M23.4739 18.6C22.4103 19.3584 21.111 19.8042 19.7081 19.8042C18.1736 19.8042 16.7628 19.2708 15.6491 18.3782L14.3967 19.6383C15.8346 20.8488 17.6868 21.5774 19.7081 21.5774C21.5982 21.5774 23.3404 20.9403 24.7342 19.868L23.4739 18.6Z"
+          fill="url(#paint3_linear)" />
+        <path
+          d="M26.2918 18.3008C27.3575 16.8983 27.9906 15.1453 27.9906 13.2435C27.9906 11.2096 27.2664 9.34583 26.0635 7.89904L24.8111 9.1592C25.6982 10.2799 26.2283 11.6994 26.2283 13.2435C26.2283 14.655 25.7853 15.9625 25.0315 17.0327L26.2918 18.3008Z"
+          fill="#F2C94C" />
+        <path
+          d="M26.2918 18.3008C27.3575 16.8983 27.9906 15.1453 27.9906 13.2435C27.9906 11.2096 27.2664 9.34583 26.0635 7.89904L24.8111 9.1592C25.6982 10.2799 26.2283 11.6994 26.2283 13.2435C26.2283 14.655 25.7853 15.9625 25.0315 17.0327L26.2918 18.3008Z"
+          fill="url(#paint4_linear)" />
+        <path
+          d="M21.9109 13.2435C21.9109 14.4676 20.9247 15.4599 19.7081 15.4599C18.4916 15.4599 17.5054 14.4676 17.5054 13.2435C17.5054 12.0194 18.4916 11.027 19.7081 11.027C20.9247 11.027 21.9109 12.0194 21.9109 13.2435Z"
+          fill="#F2C94C" />
+        <path
+          d="M21.9109 13.2435C21.9109 14.4676 20.9247 15.4599 19.7081 15.4599C18.4916 15.4599 17.5054 14.4676 17.5054 13.2435C17.5054 12.0194 18.4916 11.027 19.7081 11.027C20.9247 11.027 21.9109 12.0194 21.9109 13.2435Z"
+          fill="url(#paint5_linear)" />
+        <defs>
+          <linearGradient id="paint0_linear" x1="0" y1="0" x2="27.6555" y2="35.7392" gradientUnits="userSpaceOnUse">
+            <stop stop-color="white" stop-opacity="0.5" />
+            <stop offset="1" stop-color="white" stop-opacity="0.1" />
+          </linearGradient>
+          <linearGradient id="paint1_linear" x1="11.4257" y1="4.90961" x2="29.4001" y2="20.0562"
+            gradientUnits="userSpaceOnUse">
+            <stop stop-color="white" stop-opacity="0.5" />
+            <stop offset="1" stop-color="white" stop-opacity="0.1" />
+          </linearGradient>
+          <linearGradient id="paint2_linear" x1="11.4257" y1="4.90961" x2="29.4001" y2="20.0562"
+            gradientUnits="userSpaceOnUse">
+            <stop stop-color="white" stop-opacity="0.5" />
+            <stop offset="1" stop-color="white" stop-opacity="0.1" />
+          </linearGradient>
+          <linearGradient id="paint3_linear" x1="11.4257" y1="4.90961" x2="29.4001" y2="20.0562"
+            gradientUnits="userSpaceOnUse">
+            <stop stop-color="white" stop-opacity="0.5" />
+            <stop offset="1" stop-color="white" stop-opacity="0.1" />
+          </linearGradient>
+          <linearGradient id="paint4_linear" x1="11.4257" y1="4.90961" x2="29.4001" y2="20.0562"
+            gradientUnits="userSpaceOnUse">
+            <stop stop-color="white" stop-opacity="0.5" />
+            <stop offset="1" stop-color="white" stop-opacity="0.1" />
+          </linearGradient>
+          <linearGradient id="paint5_linear" x1="11.4257" y1="4.90961" x2="29.4001" y2="20.0562"
+            gradientUnits="userSpaceOnUse">
+            <stop stop-color="white" stop-opacity="0.5" />
+            <stop offset="1" stop-color="white" stop-opacity="0.1" />
+          </linearGradient>
+        </defs>
+      </svg>
+      <h2>PhotoGuide</h2>
+      <span>Stop the time - <br />
+        leave the memories</span>
+    </div>
+
+    <nav>
+      <input type="checkbox" id="menu-checkbox">
+      <label for="menu-checkbox"></label>
+      
+      <ul id="links">
+        <li>
+          <a href="#">Цены и услуги</a>
+        </li>
+        <li>
+          <a href="#">Контакты</a>
+        </li>
+        <li>
+          <a href="#">Отзывы</a>
+        </li>
+        <li>
+          <a href="#">Галерея</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <section id="hero">
+    <div id="hero__content">
+      <h1>Фотосессия в Турции</h1>
+      <p>
+        по цене 7000 рублей за 100 фотографий <br />
+        и 10 одноминутных видео для <nobr> <i> <ins>Instagram</ins> </i> <i class="fa fa-instagram instagram" aria-hidden="true"></i></nobr>
+      </p>
+      <a href="#contacts">Связаться с фотографом</a>
+    </div>
+    <div id="bot">
+      <h4>Вы получаете</h4>
+      <ul id="bot__body" class="blured">
+        <li>
+          <svg width="40" height="37" viewBox="0 0 40 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M37.4183 36.6667H2.57083C1.19833 36.6667 0 35.545 0 34.1667V9.16668C0 7.78752 1.19833 6.66585 2.57083 6.66585H37.4183C38.7908 6.66585 40 7.78752 40 9.16668V34.1667C40 35.545 38.7908 36.6667 37.4183 36.6667ZM38.3333 9.16668C38.3333 8.70668 37.8758 8.33252 37.4183 8.33252H2.57083C2.11333 8.33252 1.66667 8.70668 1.66667 9.16668V26.7083L11.9833 17.7033C12.3117 17.4175 12.8067 17.435 13.1142 17.7442L22.5617 27.2325L28.6233 22.6658C28.9583 22.4142 29.4242 22.4525 29.7158 22.7509L38.3333 31.6234V9.16668ZM38.3333 34.0092L29.0367 24.4384L22.9817 29C22.6517 29.2492 22.1892 29.2159 21.8975 28.9217L12.4875 19.4717L1.66667 28.9167V34.1667C1.66667 34.6259 2.11333 34.9992 2.57083 34.9992H37.4183C37.8758 34.9992 38.3333 34.6259 38.3333 34.1667V34.0092ZM26.6325 15.835C26.6325 14.455 27.7508 13.3333 29.125 13.3333C30.495 13.3333 31.6108 14.455 31.6108 15.835C31.6108 17.2117 30.495 18.3325 29.125 18.3325C27.7508 18.3325 26.6325 17.2117 26.6325 15.835ZM29.9517 15.835C29.9517 15.3742 29.5808 15 29.125 15C28.6658 15 28.2917 15.3742 28.2917 15.835C28.2917 16.2934 28.6658 16.6667 29.125 16.6667C29.5808 16.6667 29.9517 16.2934 29.9517 15.835ZM36.5892 5.00002H2.57083C2.11333 5.00002 1.74167 4.62668 1.74167 4.16668C1.74167 3.70585 2.11333 3.33335 2.57083 3.33335H36.5892C37.0475 3.33335 37.4183 3.70585 37.4183 4.16668C37.4183 4.62668 37.0475 5.00002 36.5892 5.00002ZM34.9292 1.66585H4.23083C3.7725 1.66585 3.40083 1.29335 3.40083 0.832515C3.40083 0.372515 3.7725 1.52588e-05 4.23083 1.52588e-05H34.9292C35.3875 1.52588e-05 35.7592 0.372515 35.7592 0.832515C35.7592 1.29335 35.3875 1.66585 34.9292 1.66585Z"
+              fill="#F2C94C" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M37.4183 36.6667H2.57083C1.19833 36.6667 0 35.545 0 34.1667V9.16668C0 7.78752 1.19833 6.66585 2.57083 6.66585H37.4183C38.7908 6.66585 40 7.78752 40 9.16668V34.1667C40 35.545 38.7908 36.6667 37.4183 36.6667ZM38.3333 9.16668C38.3333 8.70668 37.8758 8.33252 37.4183 8.33252H2.57083C2.11333 8.33252 1.66667 8.70668 1.66667 9.16668V26.7083L11.9833 17.7033C12.3117 17.4175 12.8067 17.435 13.1142 17.7442L22.5617 27.2325L28.6233 22.6658C28.9583 22.4142 29.4242 22.4525 29.7158 22.7509L38.3333 31.6234V9.16668ZM38.3333 34.0092L29.0367 24.4384L22.9817 29C22.6517 29.2492 22.1892 29.2159 21.8975 28.9217L12.4875 19.4717L1.66667 28.9167V34.1667C1.66667 34.6259 2.11333 34.9992 2.57083 34.9992H37.4183C37.8758 34.9992 38.3333 34.6259 38.3333 34.1667V34.0092ZM26.6325 15.835C26.6325 14.455 27.7508 13.3333 29.125 13.3333C30.495 13.3333 31.6108 14.455 31.6108 15.835C31.6108 17.2117 30.495 18.3325 29.125 18.3325C27.7508 18.3325 26.6325 17.2117 26.6325 15.835ZM29.9517 15.835C29.9517 15.3742 29.5808 15 29.125 15C28.6658 15 28.2917 15.3742 28.2917 15.835C28.2917 16.2934 28.6658 16.6667 29.125 16.6667C29.5808 16.6667 29.9517 16.2934 29.9517 15.835ZM36.5892 5.00002H2.57083C2.11333 5.00002 1.74167 4.62668 1.74167 4.16668C1.74167 3.70585 2.11333 3.33335 2.57083 3.33335H36.5892C37.0475 3.33335 37.4183 3.70585 37.4183 4.16668C37.4183 4.62668 37.0475 5.00002 36.5892 5.00002ZM34.9292 1.66585H4.23083C3.7725 1.66585 3.40083 1.29335 3.40083 0.832515C3.40083 0.372515 3.7725 1.52588e-05 4.23083 1.52588e-05H34.9292C35.3875 1.52588e-05 35.7592 0.372515 35.7592 0.832515C35.7592 1.29335 35.3875 1.66585 34.9292 1.66585Z"
+              fill="url(#paint0_linear)" />
+            <defs>
+              <linearGradient id="paint0_linear" x1="0" y1="1.52588e-05" x2="40" y2="37" gradientUnits="userSpaceOnUse">
+                <stop stop-color="white" stop-opacity="0.5" />
+                <stop offset="1" stop-color="white" stop-opacity="0.1" />
+              </linearGradient>
+            </defs>
+          </svg>
+          <span>100 обработанных фото и оригиналы</span>
+        </li>
+        <li>
+          <svg width="40" height="37" viewBox="0 0 40 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M16.3792 13.3016C16.68 13.0016 17.1662 13.0016 17.4669 13.3016L22.2931 18.1277C22.7508 17.8577 23.2769 17.6923 23.8462 17.6923C25.5431 17.6923 26.9231 19.0723 26.9231 20.7692C26.9231 22.4654 25.5431 23.8462 23.8462 23.8462C22.1492 23.8462 20.7692 22.4654 20.7692 20.7692C20.7692 20.2 20.9346 19.6731 21.2054 19.2154L16.3792 14.3892C16.0785 14.0892 16.0785 13.6023 16.3792 13.3016ZM23.8462 22.3069C24.6938 22.3069 25.3846 21.6169 25.3846 20.7692C25.3846 19.9208 24.6938 19.2308 23.8462 19.2308C23.5462 19.2308 23.2677 19.3208 23.03 19.47C22.9938 19.5808 22.94 19.6862 22.8515 19.7739C22.7638 19.8623 22.6577 19.9162 22.5469 19.9523C22.3977 20.19 22.3077 20.4685 22.3077 20.7692C22.3077 21.6169 22.9977 22.3069 23.8462 22.3069ZM36.1369 10.3346C38.5377 13.1492 40 16.7854 40 20.7692C40 29.6762 32.7531 36.9231 23.8462 36.9231C18.7162 36.9231 14.0054 34.5669 10.9215 30.4608C10.6669 30.1216 10.7354 29.6392 11.0746 29.3839C11.4146 29.1292 11.8977 29.1969 12.1523 29.5369C14.9431 33.2523 19.2054 35.3839 23.8462 35.3839C31.9054 35.3839 38.4615 28.8277 38.4615 20.7692C38.4615 12.71 31.9054 6.15309 23.8462 6.15309C18.9185 6.15309 14.3538 8.61232 11.6377 12.7308C11.4038 13.0854 10.9269 13.1831 10.5715 12.95C10.2169 12.7162 10.1192 12.2377 10.3531 11.8831C13.2138 7.54771 17.9285 4.88155 23.0769 4.63848V1.53771H20C19.5746 1.53771 19.2308 1.19309 19.2308 0.768477C19.2308 0.343861 19.5746 1.52588e-05 20 1.52588e-05H27.6923C28.1177 1.52588e-05 28.4615 0.343861 28.4615 0.768477C28.4615 1.19309 28.1177 1.53771 27.6923 1.53771H24.6154V4.65386C28.2931 4.82848 31.6485 6.24002 34.2838 8.47386L36.3792 6.37848C36.68 6.07848 37.1662 6.07848 37.4669 6.37848L38.2362 7.14848C38.5369 7.44848 38.5369 7.9354 38.2362 8.23617L36.1369 10.3346ZM8.46154 16.9223H0.769231C0.343846 16.9223 0 16.5785 0 16.1531C0 15.7285 0.343846 15.3846 0.769231 15.3846H8.46154C8.88692 15.3846 9.23077 15.7285 9.23077 16.1531C9.23077 16.5785 8.88692 16.9223 8.46154 16.9223ZM3.84615 19.9992H13.0769C13.5023 19.9992 13.8462 20.3446 13.8462 20.7692C13.8462 21.1939 13.5023 21.5377 13.0769 21.5377H3.84615C3.42077 21.5377 3.07692 21.1939 3.07692 20.7692C3.07692 20.3446 3.42077 19.9992 3.84615 19.9992ZM6.15385 24.6154H10.7692C11.1946 24.6154 11.5385 24.9592 11.5385 25.3839C11.5385 25.8085 11.1946 26.1539 10.7692 26.1539H6.15385C5.72846 26.1539 5.38462 25.8085 5.38462 25.3839C5.38462 24.9592 5.72846 24.6154 6.15385 24.6154Z"
+              fill="#F2C94C" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M16.3792 13.3016C16.68 13.0016 17.1662 13.0016 17.4669 13.3016L22.2931 18.1277C22.7508 17.8577 23.2769 17.6923 23.8462 17.6923C25.5431 17.6923 26.9231 19.0723 26.9231 20.7692C26.9231 22.4654 25.5431 23.8462 23.8462 23.8462C22.1492 23.8462 20.7692 22.4654 20.7692 20.7692C20.7692 20.2 20.9346 19.6731 21.2054 19.2154L16.3792 14.3892C16.0785 14.0892 16.0785 13.6023 16.3792 13.3016ZM23.8462 22.3069C24.6938 22.3069 25.3846 21.6169 25.3846 20.7692C25.3846 19.9208 24.6938 19.2308 23.8462 19.2308C23.5462 19.2308 23.2677 19.3208 23.03 19.47C22.9938 19.5808 22.94 19.6862 22.8515 19.7739C22.7638 19.8623 22.6577 19.9162 22.5469 19.9523C22.3977 20.19 22.3077 20.4685 22.3077 20.7692C22.3077 21.6169 22.9977 22.3069 23.8462 22.3069ZM36.1369 10.3346C38.5377 13.1492 40 16.7854 40 20.7692C40 29.6762 32.7531 36.9231 23.8462 36.9231C18.7162 36.9231 14.0054 34.5669 10.9215 30.4608C10.6669 30.1216 10.7354 29.6392 11.0746 29.3839C11.4146 29.1292 11.8977 29.1969 12.1523 29.5369C14.9431 33.2523 19.2054 35.3839 23.8462 35.3839C31.9054 35.3839 38.4615 28.8277 38.4615 20.7692C38.4615 12.71 31.9054 6.15309 23.8462 6.15309C18.9185 6.15309 14.3538 8.61232 11.6377 12.7308C11.4038 13.0854 10.9269 13.1831 10.5715 12.95C10.2169 12.7162 10.1192 12.2377 10.3531 11.8831C13.2138 7.54771 17.9285 4.88155 23.0769 4.63848V1.53771H20C19.5746 1.53771 19.2308 1.19309 19.2308 0.768477C19.2308 0.343861 19.5746 1.52588e-05 20 1.52588e-05H27.6923C28.1177 1.52588e-05 28.4615 0.343861 28.4615 0.768477C28.4615 1.19309 28.1177 1.53771 27.6923 1.53771H24.6154V4.65386C28.2931 4.82848 31.6485 6.24002 34.2838 8.47386L36.3792 6.37848C36.68 6.07848 37.1662 6.07848 37.4669 6.37848L38.2362 7.14848C38.5369 7.44848 38.5369 7.9354 38.2362 8.23617L36.1369 10.3346ZM8.46154 16.9223H0.769231C0.343846 16.9223 0 16.5785 0 16.1531C0 15.7285 0.343846 15.3846 0.769231 15.3846H8.46154C8.88692 15.3846 9.23077 15.7285 9.23077 16.1531C9.23077 16.5785 8.88692 16.9223 8.46154 16.9223ZM3.84615 19.9992H13.0769C13.5023 19.9992 13.8462 20.3446 13.8462 20.7692C13.8462 21.1939 13.5023 21.5377 13.0769 21.5377H3.84615C3.42077 21.5377 3.07692 21.1939 3.07692 20.7692C3.07692 20.3446 3.42077 19.9992 3.84615 19.9992ZM6.15385 24.6154H10.7692C11.1946 24.6154 11.5385 24.9592 11.5385 25.3839C11.5385 25.8085 11.1946 26.1539 10.7692 26.1539H6.15385C5.72846 26.1539 5.38462 25.8085 5.38462 25.3839C5.38462 24.9592 5.72846 24.6154 6.15385 24.6154Z"
+              fill="url(#paint0_linear)" />
+            <defs>
+              <linearGradient id="paint0_linear" x1="0" y1="1.52588e-05" x2="40.2569" y2="36.9791"
+                gradientUnits="userSpaceOnUse">
+                <stop stop-color="white" stop-opacity="0.5" />
+                <stop offset="1" stop-color="white" stop-opacity="0.1" />
+              </linearGradient>
+            </defs>
+          </svg>
+
+          <span>Первые 10 фото и 1 видео в течение 24 часов</span>
+        </li>
+        <li>
+          <svg width="40" height="37" viewBox="0 0 40 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M39.2381 36.5714H0.761905C0.340571 36.5714 0 36.2308 0 35.8103V5.33333C0 4.91275 0.340571 4.57219 0.761905 4.57219H13.1429V0.762665C13.1429 0.342093 13.4834 0 13.9048 0C14.3261 0 14.6667 0.342093 14.6667 0.762665V4.57219H25.3333V0.762665C25.3333 0.342093 25.6739 0 26.0952 0C26.5166 0 26.8571 0.342093 26.8571 0.762665V4.57219H39.2381C39.6594 4.57219 40 4.91275 40 5.33333V35.8103C40 36.2308 39.6594 36.5714 39.2381 36.5714ZM38.4762 6.09599H26.8571V8.38094C26.8571 8.80227 26.5166 9.14361 26.0952 9.14361C25.6739 9.14361 25.3333 8.80227 25.3333 8.38094V6.09599H14.6667V8.38094C14.6667 8.80227 14.3261 9.14361 13.9048 9.14361C13.4834 9.14361 13.1429 8.80227 13.1429 8.38094V6.09599H1.52381V11.4293H38.4762V6.09599ZM38.4762 12.9524H1.52381V35.0484H38.4762V12.9524Z"
+              fill="#F2C94C" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M39.2381 36.5714H0.761905C0.340571 36.5714 0 36.2308 0 35.8103V5.33333C0 4.91275 0.340571 4.57219 0.761905 4.57219H13.1429V0.762665C13.1429 0.342093 13.4834 0 13.9048 0C14.3261 0 14.6667 0.342093 14.6667 0.762665V4.57219H25.3333V0.762665C25.3333 0.342093 25.6739 0 26.0952 0C26.5166 0 26.8571 0.342093 26.8571 0.762665V4.57219H39.2381C39.6594 4.57219 40 4.91275 40 5.33333V35.8103C40 36.2308 39.6594 36.5714 39.2381 36.5714ZM38.4762 6.09599H26.8571V8.38094C26.8571 8.80227 26.5166 9.14361 26.0952 9.14361C25.6739 9.14361 25.3333 8.80227 25.3333 8.38094V6.09599H14.6667V8.38094C14.6667 8.80227 14.3261 9.14361 13.9048 9.14361C13.4834 9.14361 13.1429 8.80227 13.1429 8.38094V6.09599H1.52381V11.4293H38.4762V6.09599ZM38.4762 12.9524H1.52381V35.0484H38.4762V12.9524Z"
+              fill="url(#paint0_linear)" />
+            <path
+              d="M15.7585 16.4C15.4735 16.2827 15.1467 16.3467 14.928 16.5646L12.3063 19.187C12.0084 19.4842 12.0084 19.9665 12.3063 20.2644C12.6034 20.5615 13.0857 20.5615 13.3829 20.2644L14.7048 18.9432V30.2133C14.7048 30.6339 15.0453 30.9752 15.4667 30.9752C15.888 30.9752 16.2286 30.6339 16.2286 30.2133V17.104C16.2286 16.7954 16.0434 16.5181 15.7585 16.4Z"
+              fill="#F2C94C" />
+            <path
+              d="M15.7585 16.4C15.4735 16.2827 15.1467 16.3467 14.928 16.5646L12.3063 19.187C12.0084 19.4842 12.0084 19.9665 12.3063 20.2644C12.6034 20.5615 13.0857 20.5615 13.3829 20.2644L14.7048 18.9432V30.2133C14.7048 30.6339 15.0453 30.9752 15.4667 30.9752C15.888 30.9752 16.2286 30.6339 16.2286 30.2133V17.104C16.2286 16.7954 16.0434 16.5181 15.7585 16.4Z"
+              fill="url(#paint1_linear)" />
+            <path
+              d="M26.1326 16.4731L20.0373 16.4808C19.6168 16.4808 19.2762 16.8221 19.2762 17.2419V21.8141C19.2762 22.2347 19.6168 22.5752 20.0381 22.5752H23.0857C25.0507 22.5752 26.1333 23.827 26.1333 26.0998C26.1333 28.3863 25.1642 29.4514 23.0857 29.4514C20.9653 29.4514 20.8 27.6868 20.8 27.1467C20.8 26.7261 20.4594 26.3848 20.0381 26.3848C19.6168 26.3848 19.2762 26.7261 19.2762 27.1467C19.2762 29.0522 20.4541 30.9752 23.0857 30.9752C25.9909 30.9752 27.6571 29.1977 27.6571 26.0998C27.6571 22.3779 25.2952 21.0514 23.0857 21.0514H20.8V18.003L26.1341 17.9969C26.5554 17.9962 26.896 17.6548 26.8952 17.2335C26.8945 16.8129 26.5531 16.4731 26.1326 16.4731Z"
+              fill="#F2C94C" />
+            <path
+              d="M26.1326 16.4731L20.0373 16.4808C19.6168 16.4808 19.2762 16.8221 19.2762 17.2419V21.8141C19.2762 22.2347 19.6168 22.5752 20.0381 22.5752H23.0857C25.0507 22.5752 26.1333 23.827 26.1333 26.0998C26.1333 28.3863 25.1642 29.4514 23.0857 29.4514C20.9653 29.4514 20.8 27.6868 20.8 27.1467C20.8 26.7261 20.4594 26.3848 20.0381 26.3848C19.6168 26.3848 19.2762 26.7261 19.2762 27.1467C19.2762 29.0522 20.4541 30.9752 23.0857 30.9752C25.9909 30.9752 27.6571 29.1977 27.6571 26.0998C27.6571 22.3779 25.2952 21.0514 23.0857 21.0514H20.8V18.003L26.1341 17.9969C26.5554 17.9962 26.896 17.6548 26.8952 17.2335C26.8945 16.8129 26.5531 16.4731 26.1326 16.4731Z"
+              fill="url(#paint2_linear)" />
+            <defs>
+              <linearGradient id="paint0_linear" x1="4" y1="6.26304e-06" x2="42.2984" y2="28.4146"
+                gradientUnits="userSpaceOnUse">
+                <stop stop-color="white" stop-opacity="0.5" />
+                <stop offset="1" stop-color="white" stop-opacity="0.1" />
+              </linearGradient>
+              <linearGradient id="paint1_linear" x1="4" y1="6.26304e-06" x2="42.2984" y2="28.4146"
+                gradientUnits="userSpaceOnUse">
+                <stop stop-color="white" stop-opacity="0.5" />
+                <stop offset="1" stop-color="white" stop-opacity="0.1" />
+              </linearGradient>
+              <linearGradient id="paint2_linear" x1="4" y1="6.26304e-06" x2="42.2984" y2="28.4146"
+                gradientUnits="userSpaceOnUse">
+                <stop stop-color="white" stop-opacity="0.5" />
+                <stop offset="1" stop-color="white" stop-opacity="0.1" />
+              </linearGradient>
+            </defs>
+          </svg>
+
+          <span>Все фотографии через 15 дней</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section id="gallery">
+    <h3 class="gold section__title">
+      Галерея
+    </h3>
+    <h6 class="section__subtitle">Мы работаем во всех стилях</h6>
+    <div id="gallery__content">
+      <input type="radio" name="point" id="family">
+      <input type="radio" name="point" id="lovestory">
+      <input type="radio" name="point" id="lifestyle">
+      <input type="radio" name="point" id="fashion" checked>
+      <input type="radio" name="point" id="glamour">
+      <div class="controls">
+        <label class="btn" for="family">Семейная съемка</label>
+        <label class="btn" for="lovestory">Love story</label>
+        <label class="btn" for="lifestyle">Lifestyle</label>
+        <label class="btn" for="fashion">Fashion</label>
+        <label class="btn" for="glamour">Glamour</label>
+      </div>
+      <div class="slider">
+        <div class="slide family">
+          <div class="pic">
+            <div class="modal">
+              <img src="https://picsum.photos/300/200" alt="">
+            </div>
+            <img src="https://picsum.photos/300/200" alt="">
+          </div>
+          <div class="pic">
+            <div class="modal">
+              <img src="https://picsum.photos/300/200" alt="">
+            </div>
+            <img src="https://picsum.photos/300/200" alt="">
+          </div>
+          <div class="pic">
+            <div class="modal">
+              <img src="https://picsum.photos/300/200" alt="">
+            </div>
+            <img src="https://picsum.photos/300/200" alt="">
+          </div>
+          <div class="pic">
+            <div class="modal">
+              <img src="https://picsum.photos/300/200" alt="">
+            </div>
+            <img src="https://picsum.photos/300/200" alt="">
+          </div>
+          <div class="pic x2y2">
+             <img src="https://picsum.photos/600/400" alt="">
+            <div class="modal">
+              <img src="https://picsum.photos/600/400" alt="">
+            </div>
+          </div>
+          <div class="pic">
+             <img src="https://picsum.photos/300/200" alt="">
+            <div class="modal">
+              <img src="https://picsum.photos/300/200" alt="">
+            </div>
+          </div>
+          <div class="pic x1y2">
+             <img src="https://picsum.photos/300/400" alt="">
+            <div class="modal">
+              <img src="https://picsum.photos/300/400" alt="">
+            </div>
+          </div>
+          <div class="pic">
+            <div class="modal">
+              <img src="https://picsum.photos/300/200" alt="">
+            </div> <img src="https://picsum.photos/300/200" alt="">
+          </div>
+        </div>
+        <div class="slide lovestory">
+          <div class="pic">
+            <div class="modal">
+              <img src="https://picsum.photos/300/200" alt="">
+            </div>
+            <img src="https://picsum.photos/300/200" alt="">
+          </div>
+          <div class="pic">
+            <div class="modal">
+              <img src="https://picsum.photos/300/200" alt="">
+            </div>
+            <img src="https://picsum.photos/300/200" alt="">
+          </div>
+          <div class="pic">
+            <div class="modal">
+              <img src="https://picsum.photos/300/200" alt="">
+            </div>
+            <img src="https://picsum.photos/300/200" alt="">
+          </div>
+          <div class="pic">
+            <div class="modal">
+              <img src="https://picsum.photos/300/200" alt="">
+            </div>
+            <img src="https://picsum.photos/300/200" alt="">
+          </div>
+          <div class="pic x2y2">
+             <img src="https://picsum.photos/600/400" alt="">
+            <div class="modal">
+              <img src="https://picsum.photos/600/400" alt="">
+            </div>
+          </div>
+          <div class="pic">
+             <img src="https://picsum.photos/300/200" alt="">
+            <div class="modal">
+              <img src="https://picsum.photos/300/200" alt="">
+            </div>
+          </div>
+          <div class="pic x1y2">
+             <img src="https://picsum.photos/300/400" alt="">
+            <div class="modal">
+              <img src="https://picsum.photos/300/400" alt="">
+            </div>
+          </div>
+          <div class="pic">
+            <div class="modal">
+              <img src="https://picsum.photos/300/200" alt="">
+            </div> <img src="https://picsum.photos/300/200" alt="">
+          </div>
+        </div>
+        <div class="slide lifestyle">
+          <div class="pic">
+            <div class="modal">
+              <img src="https://picsum.photos/300/200" alt="">
+            </div>
+            <img src="https://picsum.photos/300/200" alt="">
+          </div>
+          <div class="pic">
+            <div class="modal">
+              <img src="https://picsum.photos/300/200" alt="">
+            </div>
+            <img src="https://picsum.photos/300/200" alt="">
+          </div>
+          <div class="pic">
+            <div class="modal">
+              <img src="https://picsum.photos/300/200" alt="">
+            </div>
+            <img src="https://picsum.photos/300/200" alt="">
+          </div>
+          <div class="pic">
+            <div class="modal">
+              <img src="https://picsum.photos/300/200" alt="">
+            </div>
+            <img src="https://picsum.photos/300/200" alt="">
+          </div>
+          <div class="pic x2y2">
+             <img src="https://picsum.photos/600/400" alt="">
+            <div class="modal">
+              <img src="https://picsum.photos/600/400" alt="">
+            </div>
+          </div>
+          <div class="pic">
+             <img src="https://picsum.photos/300/200" alt="">
+            <div class="modal">
+              <img src="https://picsum.photos/300/200" alt="">
+            </div>
+          </div>
+          <div class="pic x1y2">
+             <img src="https://picsum.photos/300/400" alt="">
+            <div class="modal">
+              <img src="https://picsum.photos/300/400" alt="">
+            </div>
+          </div>
+          <div class="pic">
+            <div class="modal">
+              <img src="https://picsum.photos/300/200" alt="">
+            </div> <img src="https://picsum.photos/300/200" alt="">
+          </div>
+        </div>
+        <div class="slide fashion">
+          <div class="pic">
+            <div class="modal">
+              <img src="./img/fashion1.png" alt="">
+            </div>
+            <img src="./img/fashion1.png" alt="">
+          </div>
+          <div class="pic">
+            <div class="modal">
+              <img src="./img/fashion2.png" alt="">
+            </div>
+            <img src="./img/fashion2.png" alt="">
+          </div>
+          <div class="pic">
+            <div class="modal">
+              <img src="./img/fashion8.png" alt="">
+            </div>
+            <img src="./img/fashion8.png" alt="">
+          </div>
+          <div class="pic">
+            <div class="modal">
+              <img src="./img/fashion5.png" alt="">
+            </div>
+            <img src="./img/fashion5.png" alt="">
+          </div>
+          <div class="pic x2y2">
+             <img src="./img/fashion4.png" alt="">
+            <div class="modal">
+              <img src="./img/fashion4.png" alt="">
+            </div>
+          </div>
+          <div class="pic">
+             <img src="./img/fashion6.png" alt="">
+            <div class="modal">
+              <img src="./img/fashion6.png" alt="">
+            </div>
+          </div>
+          <div class="pic x1y2">
+             <img src="./img/fashion3.png" alt="">
+            <div class="modal">
+              <img src="./img/fashion3.png" alt="">
+            </div>
+          </div>
+          <div class="pic">
+            <div class="modal">
+              <img src="./img/fashion7.png" alt="">
+            </div> <img src="./img/fashion7.png" alt="">
+          </div>
+        </div>
+        <div class="slide glamour">
+          <div class="pic">
+            <div class="modal">
+              <img src="https://picsum.photos/300/200" alt="">
+            </div>
+            <img src="https://picsum.photos/300/200" alt="">
+          </div>
+          <div class="pic">
+            <div class="modal">
+              <img src="https://picsum.photos/300/200" alt="">
+            </div>
+            <img src="https://picsum.photos/300/200" alt="">
+          </div>
+          <div class="pic">
+            <div class="modal">
+              <img src="https://picsum.photos/300/200" alt="">
+            </div>
+            <img src="https://picsum.photos/300/200" alt="">
+          </div>
+          <div class="pic">
+            <div class="modal">
+              <img src="https://picsum.photos/300/200" alt="">
+            </div>
+            <img src="https://picsum.photos/300/200" alt="">
+          </div>
+          <div class="pic x2y2">
+             <img src="https://picsum.photos/600/400" alt="">
+            <div class="modal">
+              <img src="https://picsum.photos/600/400" alt="">
+            </div>
+          </div>
+          <div class="pic">
+             <img src="https://picsum.photos/300/200" alt="">
+            <div class="modal">
+              <img src="https://picsum.photos/300/200" alt="">
+            </div>
+          </div>
+          <div class="pic x1y2">
+             <img src="https://picsum.photos/300/400" alt="">
+            <div class="modal">
+              <img src="https://picsum.photos/300/400" alt="">
+            </div>
+          </div>
+          <div class="pic">
+            <div class="modal">
+              <img src="https://picsum.photos/300/200" alt="">
+            </div> <img src="https://picsum.photos/300/200" alt="">
+          </div>
+        </div>
+      </div>
+
+    </div>
+    </div>
+  </section>
+  <section id="prices">
+    <h3 class="gold section__title">
+      Услуги и цены
+    </h3>
+    <h6 class="section__subtitle">Сколько стоят наши услуги</h6>
+    <ul>
+      <li class="card">
+        <span>пакет</span>
+        <h3 class="gold">Лёгкий</h3>
+        <ul>
+          <li>Съёмка и обработка 60 фотографий</li>
+          <li>USB-флешка с фото</li>
+          <li>10 одноминутных видео для Instagram</li>
+          <li class="disabled">Аренда платья на фотосессию</li>
+          <li class="disabled">Аренда квадрокоптера</li>
+          <li class="disabled">Доставка в живописные места Анталии</li>
+        </ul>
+        <span class="price">
+          7 000₽
+        </span>
+        <button class="btn">Заказать</button>
+      </li>
+      <li class="card" id="prime">
+        <span>пакет</span>
+        <h3 class="gold">Премиум</h3>
+        <ul>
+          <li>Съёмка и обработка 60 фотографий</li>
+          <li>USB-флешка с фото</li>
+          <li>10 одноминутных видео для Instagram</li>
+          <li>Аренда платья на фотосессию</li>
+          <li>Аренда квадрокоптера</li>
+          <li>Доставка в живописные места Анталии</li>
+        </ul>
+        <span class="price">
+          12 000₽
+        </span>
+        <button class="btn">Заказать</button>
+      </li>
+      <li class="card">
+        <span>пакет</span>
+        <h3 class="gold">Стандарт</h3>
+        <ul>
+          <li>Съёмка и обработка 60 фотографий</li>
+          <li>USB-флешка с фото</li>
+          <li>10 одноминутных видео для Instagram</li>
+          <li>Аренда платья на фотосессию</li>
+          <li class="disabled">Аренда квадрокоптера</li>
+          <li class="disabled">Доставка в живописные места Анталии</li>
+        </ul>
+        <span class="price">
+          9 000₽
+        </span>
+        <button class="btn">Заказать</button>
+      </li>
+    </ul>
+  </section>
+</body>
+<script src="./main.js"></script>
+
+</html>
