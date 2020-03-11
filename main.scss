@@ -516,9 +516,10 @@ h1 {
       display: block;
       z-index: 999;
       position: fixed;
-      top: 1.6rem;
+      top: 1rem;
       right: 1rem;
       font-family: 'FontAwesome';
+      font-size: 2rem;
       &::after {
         content: '\f00d';
       }
