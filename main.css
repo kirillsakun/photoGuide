@@ -229,6 +229,7 @@ h1 {
 }
 
 .btn {
+  overflow: hidden;
   cursor: pointer;
   margin: 0;
   border: none;
