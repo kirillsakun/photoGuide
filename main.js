@@ -9,16 +9,16 @@ function parallaxId(el, koeficent, x, y) {
       scrolled * koeficent}px ${y})`;
   }
 }
-const modals = document.getElementsByClassName('modal');
+const modal = document.getElementById('modal');
 const pics = document.getElementsByClassName('pic');
 
-for (let i = 0; i < pics.length; i++) {
-  let t = 0;
-  pics[i].onclick = function() {
-    t++;
+modal.onclick = function() {
+  modal.style.transform = 'scale(0)';
+};
 
-    // t % 2 === 1
-    //   ? (modals[i].style.transform = 'scale(1)' )
-    //   : (modals[i].style.transform = 'scale(0)');
+for (let i = 0; i < pics.length; i++) {
+  pics[i].onclick = function() {
+    modal.lastElementChild.src = pics[i].lastElementChild.src;
+    modal.style.transform = 'scale(1)';
   };
 }
