@@ -325,11 +325,12 @@ h1 {
       position: absolute;
       width: 100%;
       height: 100%;
-      line-height: 1400%;
+      line-height: 200px;
       vertical-align: middle;
       top: 0;
       left: 0;
       z-index: 2;
+      font-size: 1.4rem;
       background: linear-gradient(
           123.69deg,
           rgba(255, 255, 255, 0.5) 0%,
@@ -338,9 +339,28 @@ h1 {
         rgba(242, 200, 76, 0.9);
       transition: 0.25s;
       opacity: 0;
+      color: #333333;
+    }
+    &::before {
+      content: 'Увеличить';
+      box-sizing: border-box;
+      text-align: center;
+      position: absolute;
+      width: 100%;
+      font-family: 'Proxima Nova', sans-serif;
+      font-size: (15rem/16);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      top: calc(50% + 1.3rem);
+      left: 0;
+      z-index: 3;
+      transition: 0.25s;
+      opacity: 0;
+      color: #333333;
+      font-weight: bold;
     }
     &:hover {
-      &::after {
+      &::after,&::before {
         opacity: 1;
       }
     }
@@ -349,14 +369,18 @@ h1 {
     grid-column: 3 /4;
     grid-row: 1 / 3;
     &::after {
-      line-height: 2800%;
+      line-height: 400px;
     }
   }
   .pic.x2y2 {
     grid-column: 1 /3;
     grid-row: 2 / 4;
     &::after {
-      line-height: 2800%;
+      line-height: 400px;
+    }
+    &::before{
+      top: calc(50% + .9rem);
+
     }
   }
 }
