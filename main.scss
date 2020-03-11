@@ -508,9 +508,8 @@ h1 {
 }
 @media (max-width: 57.5rem) {
   header {
-  }
-  header {
     padding: 20px 10px;
+    height: unset;
     nav {
       ul li:last-of-type {
         padding: 0.5rem;
@@ -536,19 +535,29 @@ h1 {
       }
     }
     #menu-checkbox:checked + label + #links {
+      -webkit-transform: scaleY(0);
       transform: scaleY(0);
-    }
-    #links {
-      transition: 0.25s;
-      transform-origin: top;
       position: fixed;
-      top: 4.5rem;
+
+    }
+    #menu-checkbox + label + #links {
+      transform: scaleY(1);
+      -webkit-transform: scaleY(1);
+      height: 16rem;
+      position: relative;
+
+    }
+
+    #links {
+      transform-origin: top;
       left: 0;
-      width: 100%;
-      height: unset;
+      margin-top: 1rem;
+      width: 100vw;
+      height: 0px;
       z-index: 10;
       background: rgba(0, 0, 0, 0.493);
       flex-direction: column;
+
       li {
         padding: 1rem;
       }

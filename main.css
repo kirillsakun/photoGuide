@@ -510,6 +510,7 @@ h1 {
 @media (max-width: 57.5rem) {
   header {
     padding: 20px 10px;
+    height: unset;
   }
   header nav ul li:last-of-type {
     padding: 0.5rem;
@@ -531,16 +532,22 @@ h1 {
     content: "";
   }
   header #menu-checkbox:checked + label + #links {
+    -webkit-transform: scaleY(0);
     transform: scaleY(0);
+    position: fixed;
+  }
+  header #menu-checkbox + label + #links {
+    transform: scaleY(1);
+    -webkit-transform: scaleY(1);
+    height: 16rem;
+    position: relative;
   }
   header #links {
-    transition: 0.25s;
     transform-origin: top;
-    position: fixed;
-    top: 4.5rem;
     left: 0;
-    width: 100%;
-    height: unset;
+    margin-top: 1rem;
+    width: 100vw;
+    height: 0px;
     z-index: 10;
     background: rgba(0, 0, 0, 0.493);
     flex-direction: column;
