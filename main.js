@@ -3,8 +3,8 @@ window.addEventListener('scroll', function() {
 });
 
 window.FontAwesomeConfig = {
-  searchPseudoElements: true
-}
+  searchPseudoElements: true,
+};
 
 function parallaxId(el, koeficent, x, y) {
   if (!!document.getElementById(el)) {
@@ -27,3 +27,16 @@ for (let i = 0; i < pics.length; i++) {
   };
 }
 
+const forms = document.getElementsByClassName('form');
+for (let i = 0; i < forms.length; i++) {
+  let inputs = forms[i].getElementsByTagName('input');
+  for (let j = 0; j < inputs.length; j++) {
+    addEventListener('focusin' && 'focusout', () => {
+      if (inputs[j].value !== '') {
+        inputs[j].className = 'filled';
+      }
+      else 
+      inputs[j].className = '';
+    });
+  }
+}
