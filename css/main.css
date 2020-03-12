@@ -1,5 +1,5 @@
 @charset "UTF-8";
-#prices > ul, .controls, #bot #bot__body, nav ul, .logo, header {
+.social-media, #prices > ul, .controls, #bot #bot__body, nav ul, .logo, header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -49,7 +49,7 @@ section {
 #hero {
   padding: 0;
   min-height: 100vh;
-  background-image: url("./img/bg.jfif");
+  background-image: url("../img/bg.jfif");
   background-blend-mode: overlay;
   background-position: -80px -48vh;
   background-size: auto 200vh;
@@ -79,7 +79,7 @@ section {
   bottom: 0;
   width: 100%;
   height: 100%;
-  background-image: url("./img/noize.png");
+  background-image: url("../img/noize.png");
   background-size: 500px 150px;
 }
 
@@ -294,14 +294,14 @@ h1 {
   right: 1rem;
   content: "";
   color: white;
-  font-family: "FontAwesome";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
   font-size: 2rem;
   z-index: 500;
   text-shadow: black 0 0 3px;
 }
 
 .slide {
-  transition: 0.5s;
   display: none;
   grid-template-columns: repeat(4, 450px);
   grid-template-rows: repeat(3, 200px);
@@ -322,7 +322,8 @@ h1 {
   content: "";
   box-sizing: border-box;
   text-align: center;
-  font-family: "FontAwesome";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -373,7 +374,7 @@ h1 {
   line-height: 400px;
 }
 .slide .pic.x2y2::before {
-  top: calc(50% + .9rem);
+  top: calc(50% + 0.9rem);
 }
 
 #family:checked ~ .slider > .family,
@@ -434,12 +435,15 @@ h1 {
 }
 
 #prices {
-  background-color: #202020;
-  color: white;
   padding: 5rem calc(4.375rem - 10px);
 }
 #prices > ul {
   list-style: none;
+}
+
+section.dark {
+  background-color: #202020;
+  color: white;
 }
 
 .card {
@@ -474,7 +478,7 @@ h1 {
 }
 .card ul li {
   text-align: start;
-  padding-left: 1.5rem;
+  padding-left: 1.875rem;
   font-size: 1.125rem;
   margin: 10px;
   line-height: 140%;
@@ -482,22 +486,20 @@ h1 {
   color: rgba(255, 255, 255, 0.8);
 }
 .card ul li::before {
-  content: "";
-  background-image: url("./img/check.svg");
+  content: "";
+  color: #f2c94c;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
   height: 1rem;
   width: 1rem;
   background-position: center;
   position: absolute;
-  top: 0.35rem;
+  top: 0;
   left: 0;
   background-repeat: no-repeat;
 }
-.card ul li.disabled {
+.card ul li.disabled, .card ul li.disabled::before {
   color: rgba(255, 255, 255, 0.2);
-}
-.card ul li.disabled::before {
-  filter: brightness(10);
-  opacity: 0.2;
 }
 .card .price {
   font-weight: black;
@@ -510,6 +512,63 @@ h1 {
 
 #prime {
   border-color: white;
+}
+
+.social-media {
+  justify-content: center;
+  padding: 0.625rem;
+  list-style: none;
+  padding-bottom: 3.125rem;
+}
+.social-media li {
+  height: 6.875rem;
+  font-size: 1.625rem;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.social-media li a {
+  margin: 0 0.625rem;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  font-size: 1.625rem;
+  z-index: 1;
+  box-shadow: rgba(255, 255, 255, 0.5) 0 1.25rem 1.875rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social-media li h5 {
+  z-index: 2;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+}
+.social-media li.telegram a {
+  background-color: #0088cc;
+  box-shadow: rgba(0, 136, 204, 0.9) 0 1rem 1.6rem -0.875rem;
+}
+.social-media li.viber a {
+  background-color: #9b51e0;
+  box-shadow: rgba(155, 81, 224, 0.9) 0 1rem 1.6rem -0.875rem;
+}
+.social-media li.facebook a {
+  background-color: #3b5998;
+  box-shadow: rgba(59, 88, 152, 0.9) 0 1rem 1.6rem -0.875rem;
+}
+.social-media li.instagram a {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+  box-shadow: rgba(253, 181, 73, 0.9) 0 1rem 1.6rem -0.875rem;
+}
+.social-media li.watsapp a {
+  background-color: #42d691;
+  box-shadow: rgba(66, 214, 145, 0.9) 0 1rem 1.6rem -0.875rem;
+}
+.social-media li.vk a {
+  background-color: #4c75a3;
+  box-shadow: rgba(76, 117, 163, 0.9) 0 1rem 1.6rem -0.875rem;
 }
 
 @media (max-height: 40rem), (max-width: 85rem) {
@@ -580,14 +639,16 @@ h1 {
     position: fixed;
     top: 1rem;
     right: 1rem;
-    font-family: "FontAwesome";
+    font-family: "Font Awesome 5 Free";
     font-size: 2rem;
   }
   header label::after {
     content: "";
+    font-weight: 900;
   }
   header #menu-checkbox:checked + label::after {
     content: "";
+    font-weight: 900;
   }
   header #menu-checkbox:checked + label + #links {
     -webkit-transform: scaleY(0);

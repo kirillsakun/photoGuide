@@ -2,6 +2,10 @@ window.addEventListener('scroll', function() {
   parallaxId('hero', 0.5, '-80px', '- 48vh');
 });
 
+window.FontAwesomeConfig = {
+  searchPseudoElements: true
+}
+
 function parallaxId(el, koeficent, x, y) {
   if (!!document.getElementById(el)) {
     let scrolled = window.pageYOffset;
@@ -22,3 +26,4 @@ for (let i = 0; i < pics.length; i++) {
     modal.style.transform = 'scale(1)';
   };
 }
+
