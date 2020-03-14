@@ -43,9 +43,11 @@ for (let i = 0; i < pics.length; i++) {
 
 playBtn.onclick = function() {
   video.style.transform = 'scale(1)';
+  video.lastElementChild.play();
 };
 playSpan.onclick = function() {
   video.style.transform = 'scale(1)';
+  video.lastElementChild.play();
 };
 video.firstElementChild.onclick = function(){
   video.style.transform = 'scale(0)';
