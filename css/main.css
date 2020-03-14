@@ -624,7 +624,7 @@ section.dark {
   background-image: url("../img/team-bg.jfif");
   background-size: auto 69rem;
   background-repeat: no-repeat;
-  max-height: 69rem;
+  max-height: 52rem;
   padding: 0;
   color: white;
 }
@@ -640,10 +640,13 @@ section.dark {
   left: 21.375rem;
   top: 19rem;
   z-index: 2;
-}
-#team #play i {
+  border-radius: 50%;
   width: 7.5rem;
   height: 7.5rem;
+}
+#team #play i {
+  width: inherit;
+  height: inherit;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -722,7 +725,7 @@ section.dark {
   font-size: 2.125rem;
 }
 
-@media (max-height: 40rem), (max-width: 85rem) {
+@media (max-height: 40rem), (max-width: 86rem) {
   #bot {
     display: none;
   }
@@ -738,6 +741,28 @@ section.dark {
     transform: translate(-50%, -50%);
   }
 }
+@media (max-width: 86rem) {
+  #team {
+    background-size: 210rem auto;
+    max-height: unset;
+  }
+  #team img {
+    display: none;
+  }
+  #team #play {
+    position: relative;
+    left: 0;
+    top: 0;
+    margin: 4.375rem auto;
+  }
+
+  #team__description {
+    position: relative;
+    left: 0;
+    width: 100%;
+    max-height: unset;
+  }
+}
 @media (max-width: 72rem) {
   #prices {
     justify-content: center;
@@ -747,37 +772,9 @@ section.dark {
     width: 100%;
   }
 }
-@media (max-width: 50rem) {
-  #prices,
-#gallery,
-#contacts {
-    padding: 5rem calc(1.375rem - 10px);
-  }
-
-  #hero h1 {
-    font-size: 12vw;
-    width: unset;
-  }
-  #hero p {
-    font-size: 4.5vw;
-  }
-  #hero a {
-    font-size: 3.5vw;
-    padding: 3vw 5vw;
-    width: unset;
-  }
-
-  .controls {
-    flex-direction: column;
-    width: 100%;
-  }
-
+@media (max-width: 67.625rem) {
   #gallery__content {
-    height: calc(776px + 18rem) !important;
-  }
-
-  .form .form__body > * {
-    width: 100%;
+    height: calc(776px + 3rem);
   }
 }
 @media (max-width: 57.5rem) {
@@ -829,9 +826,38 @@ section.dark {
     padding: 1rem;
   }
 }
-@media (max-width: 67.625rem) {
+@media (max-width: 50rem) {
+  #prices,
+#gallery,
+#contacts,
+#team__description {
+    padding: 5rem calc(1.375rem - 10px);
+  }
+
+  #hero h1 {
+    font-size: 12vw;
+    width: unset;
+  }
+  #hero p {
+    font-size: 4.5vw;
+  }
+  #hero a {
+    font-size: 3.5vw;
+    padding: 3vw 5vw;
+    width: unset;
+  }
+
+  .controls {
+    flex-direction: column;
+    width: 100%;
+  }
+
   #gallery__content {
-    height: calc(776px + 3rem);
+    height: calc(776px + 18rem) !important;
+  }
+
+  .form .form__body > * {
+    width: 100%;
   }
 }
 @media (max-width: 29rem) {
