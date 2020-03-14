@@ -132,6 +132,23 @@ h1 {
   line-height: 100%;
   overflow: hidden;
 }
+.instagram:not(li){
+  top: 4px;
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  padding: 0.19rem 0.3rem 0.14rem 0.26rem;
+  border-radius: 0.5rem;
+  color: white;
+}
+ins {
+  font-family: 'Playfair Display', serif;
+}
 #hero__content {
   top: (140rem/16);
   clear: both;
@@ -149,23 +166,9 @@ h1 {
     letter-spacing: -0.5px;
     margin-bottom: (45rem/16);
     font-weight: 500;
-    ins {
-      font-family: 'Playfair Display', serif;
-    }
+
   }
-  .instagram {
-    top: 4px;
-    background: radial-gradient(
-      circle at 30% 107%,
-      #fdf497 0%,
-      #fdf497 5%,
-      #fd5949 45%,
-      #d6249f 60%,
-      #285aeb 90%
-    );
-    padding: 0.19rem 0.3rem 0.14rem 0.26rem;
-    border-radius: 0.5rem;
-  }
+
   a {
     background-color: #fff;
     color: #000;
@@ -660,6 +663,80 @@ section.dark {
   }
 }
 
+#team{
+  //#TODO replace vh by rem after
+  background-image: url('../img/team-bg.jfif');
+  background-size: auto 69rem;
+  background-repeat: no-repeat;
+  max-height: 69rem;
+  padding: 0;
+  color: white;
+  img{
+    position: absolute;
+    bottom: 0;
+    left: (87rem/16);
+    height: (620rem/16);
+    z-index: 1;
+  }
+  .play{
+    position: absolute;
+    left: (342rem/16);
+    top: 19rem;
+    z-index: 5;
+    i{
+      width: (120rem/16);
+      height: (120rem/16);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #fff;
+      border-radius: 50%;
+      font-size: (34rem/16);
+      &::before{
+        position: relative;
+        left: .25rem;
+      }
+    }
+  }
+}
+#team__description{
+  left: calc(100% - 42.5rem);
+  top: 0;
+  height: 100%;
+  width: (680rem/16);
+  max-width: 100%;
+  padding: (80rem/16);
+  z-index: 3;
+  > *{
+    text-align: start;
+  }
+  .section__subtitle{
+    font-size: (34rem/16);
+  }
+  >p{
+    letter-spacing: -0.3px;
+    font-size: (18rem/16);
+    line-height: 140%;
+    span{
+      font-family:'Proxima Nova Semibold';
+      &.gold{
+        text-decoration: underline;
+      }
+    }
+  }
+  > p:not(:last-of-type){
+    margin-bottom: (150rem/4/16);
+  }
+}
+#reviews{
+  .section__subtitle{
+    max-width: (650rem/16);
+    margin:  auto;
+    font-size: (34rem/16);
+
+  }
+}
+
 @media (max-height: 40rem), (max-width: 85rem) {
   #bot {
     display: none;
@@ -782,5 +859,4 @@ section.dark {
   .logo span {
     display: none;
   }
-  
 }

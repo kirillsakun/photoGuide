@@ -141,6 +141,18 @@ h1 {
   overflow: hidden;
 }
 
+.instagram:not(li) {
+  top: 4px;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+  padding: 0.19rem 0.3rem 0.14rem 0.26rem;
+  border-radius: 0.5rem;
+  color: white;
+}
+
+ins {
+  font-family: "Playfair Display", serif;
+}
+
 #hero__content {
   top: 8.75rem;
   clear: both;
@@ -159,15 +171,6 @@ h1 {
   letter-spacing: -0.5px;
   margin-bottom: 2.8125rem;
   font-weight: 500;
-}
-#hero__content p ins {
-  font-family: "Playfair Display", serif;
-}
-#hero__content .instagram {
-  top: 4px;
-  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
-  padding: 0.19rem 0.3rem 0.14rem 0.26rem;
-  border-radius: 0.5rem;
 }
 #hero__content a {
   background-color: #fff;
@@ -647,6 +650,78 @@ section.dark {
   text-decoration: underline;
   color: white;
   font-family: "Proxima Nova Semibold";
+}
+
+#team {
+  background-image: url("../img/team-bg.jfif");
+  background-size: auto 69rem;
+  background-repeat: no-repeat;
+  max-height: 69rem;
+  padding: 0;
+  color: white;
+}
+#team img {
+  position: absolute;
+  bottom: 0;
+  left: 5.4375rem;
+  height: 38.75rem;
+  z-index: 1;
+}
+#team .play {
+  position: absolute;
+  left: 21.375rem;
+  top: 19rem;
+  z-index: 5;
+}
+#team .play i {
+  width: 7.5rem;
+  height: 7.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 50%;
+  font-size: 2.125rem;
+}
+#team .play i::before {
+  position: relative;
+  left: 0.25rem;
+}
+
+#team__description {
+  left: calc(100% - 42.5rem);
+  top: 0;
+  height: 100%;
+  width: 42.5rem;
+  max-width: 100%;
+  padding: 5rem;
+  z-index: 3;
+}
+#team__description > * {
+  text-align: start;
+}
+#team__description .section__subtitle {
+  font-size: 2.125rem;
+}
+#team__description > p {
+  letter-spacing: -0.3px;
+  font-size: 1.125rem;
+  line-height: 140%;
+}
+#team__description > p span {
+  font-family: "Proxima Nova Semibold";
+}
+#team__description > p span.gold {
+  text-decoration: underline;
+}
+#team__description > p:not(:last-of-type) {
+  margin-bottom: 2.34375rem;
+}
+
+#reviews .section__subtitle {
+  max-width: 40.625rem;
+  margin: auto;
+  font-size: 2.125rem;
 }
 
 @media (max-height: 40rem), (max-width: 85rem) {
