@@ -205,6 +205,7 @@
   </section>
   <section id="gallery">
     <div id="modal">
+      <span><i class="fas fa-times"></i></span>
       <img src="./img/bg.jfif" alt="">
     </div>
     <h3 class="gold section__title">
@@ -418,10 +419,19 @@
     </ul>
   </section>
   <section id="team">
+    <div id="video">
+      <span><i class="fas fa-times"></i></span>
+      <video controls>
+        <source src="./video/MichaelJackson-BillieJean.mp4" type="video/mp4">
+        <source src="./video/MichaelJackson-BillieJean.webm" type="video/webm">
+        Your browser doesn't support HTML5 video tag.
+      </video>
+    </div>
     <img src="./img/team.png" alt="">
-    <div class="play">
+    <div id="play" onclick="openVideo()">
       <i class="fas fa-play gold"></i>
     </div>
+
     <div id="team__description" class="blured">
       <h3 class="gold section__title">
         Наша команда
@@ -437,7 +447,7 @@
       <p>
         Ладим с детьми, знаем уникальные места вблизи Анталии, помогаем позировать, умеем смешить и ловить мгновения. На
         наших фотографиях вы будете выглядеть естественно красиво, даже если это ваша первая съемка. А чтобы убедиться,
-        что вам с нами будет комфортно, <span>посмотрите 2-минутное видео </span>
+        что вам с нами будет комфортно, <span id="play-span">посмотрите 2-минутное видео </span>
       </p>
     </div>
   </section>
@@ -445,7 +455,8 @@
     <h3 class="gold section__title">
       Отзывы
     </h3>
-    <h4 class="section__subtitle">Узнайте, что пишут о нас наши клиенты в своих <i> <ins>Instagram</ins> </i> <i class="fab fa-instagram instagram"></i> аккаунтах</h4>
+    <h4 class="section__subtitle">Узнайте, что пишут о нас наши клиенты в своих <i> <ins>Instagram</ins> </i> <i
+        class="fab fa-instagram instagram"></i> аккаунтах</h4>
 
   </section>
   <section id="contacts" class="dark">

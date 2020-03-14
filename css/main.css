@@ -49,11 +49,10 @@ section {
   padding: 0;
   min-height: 100vh;
   background-image: url("../img/bg.jfif");
-  background-blend-mode: overlay;
   background-position: -80px -48vh;
   background-size: auto 200vh;
   background-repeat: no-repeat;
-  background-color: rgba(0, 0, 0, 0.075);
+  background-color: #6ebef0;
 }
 #hero::after {
   content: "*Турция";
@@ -272,37 +271,6 @@ ins {
   height: 100vw;
   width: 640px;
   padding-bottom: 70px;
-}
-
-#modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100vw;
-  z-index: 500;
-  transition: 0.5s;
-  transform: scale(0);
-  background-color: rgba(0, 0, 0, 0.9);
-  cursor: pointer;
-}
-#modal img {
-  object-fit: contain;
-  object-position: center;
-  width: 100%;
-  height: 100vh;
-}
-#modal::before {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  content: "";
-  color: white;
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  font-size: 2rem;
-  z-index: 500;
-  text-shadow: black 0 0 3px;
 }
 
 .slide {
@@ -667,13 +635,13 @@ section.dark {
   height: 38.75rem;
   z-index: 1;
 }
-#team .play {
+#team #play {
   position: absolute;
   left: 21.375rem;
   top: 19rem;
-  z-index: 5;
+  z-index: 2;
 }
-#team .play i {
+#team #play i {
   width: 7.5rem;
   height: 7.5rem;
   display: flex;
@@ -683,9 +651,39 @@ section.dark {
   border-radius: 50%;
   font-size: 2.125rem;
 }
-#team .play i::before {
+#team #play i::before {
   position: relative;
   left: 0.25rem;
+}
+
+#video, #modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 500;
+  transition: 0.5s;
+  transform: scale(0);
+  background-color: rgba(0, 0, 0, 0.9);
+  cursor: pointer;
+}
+#video video, #video img, #modal video, #modal img {
+  object-fit: contain;
+  object-position: center;
+  width: 100%;
+  height: 100vh;
+}
+#video span, #modal span {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  color: white;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 2rem;
+  z-index: 500;
+  text-shadow: black 0 0 3px;
 }
 
 #team__description {
