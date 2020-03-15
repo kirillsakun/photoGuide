@@ -649,16 +649,31 @@ section.dark {
   }
   #play{
     position: absolute;
-    left: (342rem/16);
+    left: (310rem/16);
     top: 19rem;
     z-index: 2;
+    width: (200rem/16);
+    height: (200rem/16);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 50%;
-    width: (120rem/16);
-    height: (120rem/16);
-
+    &::before{
+      content: '';
+      background-image: url('../img/circle-text.png');
+      background-size: contain;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      animation: rotate 30s linear infinite;
+      border-radius: 50%;
+    }
     i{
-      width: inherit;
-      height: inherit;
+      width: (160rem/16);
+      height: (160rem/16);
       display: flex;
       align-items: center;
       justify-content: center;  
@@ -670,6 +685,14 @@ section.dark {
         left: .25rem;
       }
     }
+  }
+}
+@keyframes rotate{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
   }
 }
 #video, #modal{
@@ -722,6 +745,7 @@ section.dark {
     line-height: 140%;
     span{
       font-family:'Proxima Nova Semibold';
+      cursor: pointer;
       &.gold{
         text-decoration: underline;
       }

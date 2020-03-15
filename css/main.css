@@ -637,16 +637,32 @@ section.dark {
 }
 #team #play {
   position: absolute;
-  left: 21.375rem;
+  left: 19.375rem;
   top: 19rem;
   z-index: 2;
+  width: 12.5rem;
+  height: 12.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 50%;
-  width: 7.5rem;
-  height: 7.5rem;
+}
+#team #play::before {
+  content: "";
+  background-image: url("../img/circle-text.png");
+  background-size: contain;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: rotate 30s linear infinite;
+  border-radius: 50%;
 }
 #team #play i {
-  width: inherit;
-  height: inherit;
+  width: 10rem;
+  height: 10rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -659,6 +675,14 @@ section.dark {
   left: 0.25rem;
 }
 
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 #video, #modal {
   position: fixed;
   top: 0;
@@ -711,6 +735,7 @@ section.dark {
 }
 #team__description > p span {
   font-family: "Proxima Nova Semibold";
+  cursor: pointer;
 }
 #team__description > p span.gold {
   text-decoration: underline;
